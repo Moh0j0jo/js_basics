@@ -10,7 +10,13 @@ let favoriteBooks = [
         author: "Romhányi József",
         year: 2003,
         isNewerThan2000: true
-    }
+    },
+    {
+      title: "Fulemule",
+      author: "Teszt Elek",
+      year: 2000,
+      isNewerThan2000: true
+  }
 ]
 
 for (let index = 0; index < favoriteBooks.length; index++) {
@@ -27,11 +33,13 @@ for (let index = 0; index < favoriteBooks.length; index++) {
   // }
   // console.log(`Book: ${title} This book is ${age} than 2000`);
 
-  if (year > 2000){
+  if (year === 2000){
+    age = "used"
+   } else if(year > 2000){
     age = "newer"
-   } else {
+   } else{
     age = "older"
-  }
+   }
   console.log(`Book: ${title} This book is ${age} than 2000`);
 };
   
