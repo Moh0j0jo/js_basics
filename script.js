@@ -1,21 +1,21 @@
 let favoriteBooks = [
-    {
-        title: "Öreg néne őzikéje",
-        author: "Fazekas Anna",
-        year: 1952,
-        isNewerThan2000: false,
-    },
-    {
-        title: "Szamárfül",
-        author: "Romhányi József",
-        year: 2003,
-        isNewerThan2000: true
-    },
-    {
-      title: "Fulemule",
-      author: "Teszt Elek",
-      year: 2000,
-      isNewerThan2000: true
+  {
+    title: "Öreg néne őzikéje",
+    author: "Fazekas Anna",
+    year: 1952,
+    isNewerThan2000: false,
+  },
+  {
+    title: "Szamárfül",
+    author: "Romhányi József",
+    year: 2003,
+    isNewerThan2000: true
+  },
+  {
+    title: "Fulemule",
+    author: "Teszt Elek",
+    year: 2000,
+    isNewerThan2000: true
   }
 ]
 
@@ -25,7 +25,7 @@ for (let index = 0; index < favoriteBooks.length; index++) {
   const ischeck = favoriteBooks[index].isNewerThan2000;
   const year = favoriteBooks[index].year;
   let age = ""
-  
+
   // if (ischeck){
   //   age = "newer"
   //  } else {
@@ -33,13 +33,13 @@ for (let index = 0; index < favoriteBooks.length; index++) {
   // }
   // console.log(`Book: ${title} This book is ${age} than 2000`);
 
-  if (year === 2000){
+  if (year === 2000) {
     age = "used"
-   } else if(year > 2000){
+  } else if (year > 2000) {
     age = "newer"
-   } else{
+  } else {
     age = "older"
-   }
+  }
   console.log(`Book: ${title} This book is ${age} than 2000`);
 };
-  
+
