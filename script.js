@@ -34,12 +34,12 @@ for (let index = 0; index < favoriteBooks.length; index++) {
   // console.log(`Book: ${title} This book is ${age} than 2000`);
 
   if (year === 2000) {
-    age = "used"
+    age = "printed in"
   } else if (year > 2000) {
-    age = "newer"
+    age = "newer than"
   } else {
-    age = "older"
+    age = "older than"
   }
-  console.log(`Book: ${title} This book is ${age} than 2000`);
+  console.log(`Book: ${title} This book is ${age} 2000`);
 };
 
